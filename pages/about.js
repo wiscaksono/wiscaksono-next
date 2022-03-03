@@ -1,16 +1,21 @@
 import Navbar from "../components/Navbar";
 export default function About() {
   return (
-    <section className="bg-main no-scrollbar">
+    <section className="bg-main no-scrollbar bg-fixed">
       <div className="bg-background bg-fixed min-h-screen object-cover">
         <Navbar></Navbar>
         <div className="mt-10 container">
           <div className="flex flex-col items-center justify-center ">
             <div className="mb-10 lg:w-1/2 w-72  md:w-1/2 hover:scale-105 transition-transform myImage">
-              <img src="mypict.webp" alt="" />
+              <img src="mypict.webp" alt="" draggable="false" />
             </div>
-            <div className="w-[192px] mb-10 lg:1/3 hover:-translate-y-2 transition-transform">
-              <img src="aboutme.svg" alt="" className="w-full myImage" />
+            <div className="w-[192px] mb-10 lg:1/3 hover:-translate-y-2 transition-transform ">
+              <img
+                src="aboutme.svg"
+                alt=""
+                className="w-full myImage"
+                draggable="false"
+              />
             </div>
             <p className="leading-relaxed text-center align-center text-darkgray w-[576px]">
               I am an active 8th semester student at the Institute of
@@ -20,11 +25,13 @@ export default function About() {
               programming languages.
             </p>
             <img
+              draggable="false"
               src="line.svg"
               alt=""
               className="lg:w-1/2 w-72 my-10 myImage"
             />
             <img
+              draggable="false"
               src="organisasi.svg"
               alt=""
               className="lg:w-1/2 w-72 hover:-translate-y-2 transition-transform my-10 myImage"

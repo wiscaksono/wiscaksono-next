@@ -2,22 +2,24 @@ import Cards from "../components/Cards";
 import Navbar from "../components/Navbar";
 export default function artworks() {
   return (
-    <section className="bg-main no-scrollbar">
-      <div className="bg-background bg-fixed min-h-screen object-cover">
+    <section className="bg-main no-scrollbar bg-fixed overflow-x-hidden">
+      <div className="bg-background bg-fixed bg-fixedreen object-cover relative">
         <Navbar></Navbar>
         <div className="mt-10 container">
           <div className="flex items-center justify-center flex-col">
             <img
+              draggable="false"
               src="artwork.svg"
               alt=""
               className="my-10 lg:w-1/2 w-80 hover:-translate-y-2 transition-transform"
             />
-            <p className="px-6 mb-10 text-center lg:px-0 text-darkgray">
+            <p className="px-6  text-center lg:px-0 text-darkgray">
               I like to learn about things related to 3d design and editing.
               these are some of my works!.
             </p>
 
             <img
+              draggable="false"
               src="line.svg"
               alt=""
               className="lg:w-1/2 w-72 my-10 myImage"
@@ -32,7 +34,6 @@ export default function artworks() {
                 author="By: Me"
               />
               <Cards src="moonlight.webp" name="A+ Studio" author="By: Me" />
-
               <Cards src="moonlight.webp" name="A+ Studio" author="By: Me" />
               <Cards src="moonlight.webp" name="A+ Studio" author="By: Me" />
             </div>
