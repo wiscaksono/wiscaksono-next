@@ -1,5 +1,6 @@
 import Navbar from "../components/Navbar";
 import SocialMedia from "../components/SocialMedia";
+
 export default function Home() {
   return (
     <section className="bg-main bg-fixed">
