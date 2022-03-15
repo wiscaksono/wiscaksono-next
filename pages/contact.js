@@ -11,13 +11,13 @@ export default function contact() {
               alt=""
               className="w-1/3 mb-10 lg:w-1/3 hover:-translate-y-2 transition-transform  myImage animate-bounce mt-10"
             />
-            <p className="px-6 mb-10 text-center lg:px-0 text-darkgray">
+            <p className="px-6 mb-10 text-center lg:px-0 text-darkgray poppins">
               Send me a message and don't be shy!
             </p>
             <form
               autoComplete="off"
               name="portofolio-contact-form"
-              class="w-full max-w-lg px-6 lg:px-0"
+              class="w-full max-w-lg px-6 lg:px-0 poppins"
             >
               <div class="flex flex-wrap -mx-3 mb-6">
                 <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">

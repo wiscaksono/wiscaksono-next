@@ -24,7 +24,7 @@ export default function Home() {
                 An electrical students who likes to code.
               </p>
             </div>
-            <div className="flex justify-center gap-8 text-white opacity-70 social-media">
+            <div className="flex justify-center gap-4 text-white opacity-70 social-media">
               <SocialMedia
                 href="https://www.facebook.com/wiscaksono"
                 img="facebook.svg"

@@ -3,8 +3,8 @@ import Navbar from "../components/Navbar";
 export default function About() {
   return (
     <Scroller>
-      <section className="bg-main no-scrollbar bg-fixed">
-        <div className="bg-background bg-fixed min-h-screen object-cover">
+      <section className="bg-main bg-fixed ">
+        <div className="">
           <Navbar></Navbar>
           <div className="mt-10 container">
             <div className="flex flex-col items-center justify-center ">
@@ -19,7 +19,7 @@ export default function About() {
                   draggable="false"
                 />
               </div>
-              <p className="leading-relaxed text-center align-center text-darkgray w-[576px]">
+              <p className="leading-relaxed text-center align-center text-darkgray w-[576px] poppins">
                 I am an active 8th semester student at the Institute of
                 Technology-PLN majoring in Electrical Engineering. I am also a
                 sociable person, able to work well together, and able to
@@ -39,7 +39,7 @@ export default function About() {
                 className="lg:w-1/2 w-72 hover:-translate-y-2 transition-transform my-10 myImage"
               />
 
-              <ul className="max-w-md  px-6 mx-auto lg:max-w-xl lg:px-0 list-disc text-darkgray mb-10">
+              <ul className="max-w-md  px-6 mx-auto lg:max-w-xl lg:px-0 list-disc text-darkgray mb-10 poppins">
                 <li>
                   Part of Study Independent Kampus Merdeka at Artificial
                   Intelligence Center Indonesia (AICI)

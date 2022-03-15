@@ -8,8 +8,8 @@ gsap.registerPlugin(ScrollTrigger);
 export default function artworks() {
   return (
     <Scroller>
-      <section className="bg-main no-scrollbar bg-fixed overflow-x-hidden">
-        <div className="bg-background bg-fixed bg-fixedreen object-cover relative">
+      <section className="bg-main no-scrollbar bg-fixed ">
+        <div className=" bg-fixed object-cover relative">
           <Navbar></Navbar>
           <div className="mt-10 container">
             <div className="flex items-center justify-center flex-col">
@@ -19,7 +19,7 @@ export default function artworks() {
                 alt=""
                 className="my-10 lg:w-1/2 w-80 hover:-translate-y-2 transition-transform"
               />
-              <p className="px-6  text-center lg:px-0 text-darkgray">
+              <p className="px-6  text-center lg:px-0 text-darkgray poppins">
                 I like to learn about things related to 3d design and editing.
                 these are some of my works!.
               </p>
@@ -32,19 +32,30 @@ export default function artworks() {
               />
 
               <div className="grid gap-6 px-6 pb-10 mt-8 lg:grid-cols-3 lg:px-0 md:grid-cols-2">
-                <Cards src="aplus.png" name="A+ Studio" author="By: Me" />
-                <Cards src="sosiotech.png" name="Sosiotech" author="By: Me" />
+                <Cards
+                  src="aplus.png"
+                  name="A+ Studio"
+                  author="By: Me"
+                  href="https://aplus-studio.netlify.app/"
+                />
+                <Cards
+                  src="sosiotech.png"
+                  name="Sisotech"
+                  author="By: Me"
+                  href="https://sisotech.netlify.app/"
+                />
                 <Cards
                   src="nft-market.png"
                   name="NFT Marketplace"
                   author="By: Me"
+                  href="https://nft-wisnu.netlify.app/"
                 />
                 <Cards src="moonlight.webp" name="A+ Studio" author="By: Me" />
-                <Cards src="moonlight.webp" name="A+ Studio" author="By: Me" />
-                <Cards src="moonlight.webp" name="A+ Studio" author="By: Me" />
+                <Cards src="majalah1.webp" name="A+ Studio" author="By: Me" />
+                <Cards src="thedeer.webp" name="A+ Studio" author="By: Me" />
               </div>
               <div className="hover:-translate-y-2 transition-transform items-center pt-5 pb-10">
-                <button className="shadow bg-contactbg focus:outline-none focus:ring-2 focus:ring-orangebg transition-all text-darkgray font-bold py-2 px-4 rounded btn-kirim">
+                <button className="shadow bg-contactbg focus:outline-none focus:ring-2 focus:ring-orangebg transition-all font-bold py-2 px-4 rounded btn-kirim text-darkgray poppins">
                   Load More
                 </button>
               </div>
