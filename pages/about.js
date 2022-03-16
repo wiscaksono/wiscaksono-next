@@ -1,20 +1,41 @@
 import IndexPage from "../components/Head";
 import Scroller from "../components/scroller";
 import Navbar from "../components/Navbar";
+import React, { useEffect } from "react";
+import gsap from "gsap";
+import { TextPlugin } from "gsap/dist/TextPlugin";
+
 export default function About() {
+  useEffect(() => {
+    window.addEventListener(
+      "contextmenu",
+      function (e) {
+        e.preventDefault();
+      },
+      false
+    );
+    gsap.registerPlugin(TextPlugin);
+    gsap.from(".atasan", {
+      duration: 1,
+      delay: 0.5,
+      y: 100,
+      opacity: 0,
+      ease: "power4",
+    });
+  });
   return (
     <>
       <IndexPage />
       <Scroller>
-        <section className="bg-main h-full w-full bg-cover">
+        <section className="bg-main bg-fixed">
           <div className="">
             <Navbar></Navbar>
-            <div className="mt-10 container">
+            <div className="mt-10 container atasan">
               <div className="flex flex-col items-center justify-center ">
                 <div className="mb-10 lg:w-1/2 w-72  md:w-1/2 hover:scale-105 transition-transform myImage">
                   <img src="mypict.webp" alt="" draggable="false" />
                 </div>
-                <div className="w-[192px] mb-10 lg:1/3 hover:-translate-y-2 transition-transform ">
+                <div className="w-[192px] mb-10 lg:1/3 hover:-translate-y-2 transition-transform duration-[400ms]">
                   <img
                     src="aboutme.svg"
                     alt=""
@@ -23,11 +44,18 @@ export default function About() {
                   />
                 </div>
                 <p className="leading-relaxed text-center align-center text-darkgray w-[576px] poppins">
-                  I am an active 8th semester student at the Institute of
-                  Technology-PLN majoring in Electrical Engineering. I am also a
-                  sociable person, able to work well together, and able to
-                  implement the material that I understand. Besides, I can
-                  operate various programming languages.
+                  I am an active 8th semester student at the <span> </span>
+                  <span className="decoration-orangebg/50 underline underline-offset-4">
+                    Institute of Technology-PLN
+                  </span>{" "}
+                  majoring in{" "}
+                  <span className="decoration-orangebg/50 underline underline-offset-4">
+                    {" "}
+                    Electrical Engineering.
+                  </span>{" "}
+                  I am also a sociable person, able to work well together, and
+                  able to implement the material that I understand. Besides, I
+                  can operate various programming languages.
                 </p>
                 <img
                   draggable="false"

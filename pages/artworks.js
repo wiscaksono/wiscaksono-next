@@ -2,11 +2,28 @@ import IndexPage from "../components/Head";
 import Cards from "../components/Cards";
 import Navbar from "../components/Navbar";
 import Scroller from "../components/scroller";
+import React, { useState, useEffect } from "react";
 import gsap from "gsap";
-import ScrollTrigger from "gsap/dist/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
+import { TextPlugin } from "gsap/dist/TextPlugin";
 
 export default function artworks() {
+  useEffect(() => {
+    window.addEventListener(
+      "contextmenu",
+      function (e) {
+        e.preventDefault();
+      },
+      false
+    );
+    gsap.registerPlugin(TextPlugin);
+    gsap.from(".atasan", {
+      duration: 1,
+      delay: 0.5,
+      y: 100,
+      opacity: 0,
+      ease: "power4",
+    });
+  });
   return (
     <>
       <IndexPage />
@@ -14,7 +31,7 @@ export default function artworks() {
         <section className="bg-main no-scrollbar bg-fixed  overflow-hidden">
           <div className=" bg-fixed object-cover relative">
             <Navbar></Navbar>
-            <div className="mt-10 container">
+            <div className="mt-10 container atasan">
               <div className="flex items-center justify-center flex-col">
                 <img
                   draggable="false"
@@ -23,8 +40,19 @@ export default function artworks() {
                   className="my-10 lg:w-1/2 w-80 hover:-translate-y-2 transition-transform"
                 />
                 <p className="px-6  text-center lg:px-0 text-darkgray poppins">
-                  I like to learn about things related to 3d design and editing.
-                  these are some of my works!.
+                  I like to learn about things related to
+                  <span> </span>
+                  <span className="decoration-orangebg/50 underline underline-offset-4">
+                    3D design
+                  </span>
+                  <span> </span>
+                  and
+                  <span> </span>
+                  <span className="decoration-orangebg/50 underline underline-offset-4">
+                    editing.
+                  </span>
+                  <span> </span>
+                  these are some of my works!
                 </p>
 
                 <img
@@ -61,7 +89,7 @@ export default function artworks() {
                   <Cards src="majalah1.webp" name="A+ Studio" author="By: Me" />
                   <Cards src="thedeer.webp" name="A+ Studio" author="By: Me" />
                 </div>
-                <div className="hover:-translate-y-2 transition-transform items-center pt-5 pb-10">
+                <div className="hover:-translate-y-2 transition-transform items-center pt-5 pb-10 active:translate-y-[0.12.5rem]">
                   <button className="shadow bg-contactbg focus:outline-none focus:ring-2 focus:ring-orangebg transition-all font-bold py-2 px-4 rounded btn-kirim text-darkgray poppins">
                     Load More
                   </button>

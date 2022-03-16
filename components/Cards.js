@@ -9,7 +9,7 @@ export default function Cards({ src, name, author, href }) {
           draggable="false"
         />
       </div>
-      <div className="flex items-center justify-between px-4 py-2 bg-contactbg">
+      <div className="flex items-center justify-between px-4 py-2 bg-contactbg active:translate-y-[0.12.5rem]">
         <div className="poppins">
           <h1 className="font-bold text-white">{name}</h1>
           <p className="text-darkgray">{author}</p>
@@ -17,7 +17,7 @@ export default function Cards({ src, name, author, href }) {
         <div>
           <a
             href={href}
-            className="text-orangebg font-semibold poppins"
+            className="text-orangebg font-semibold poppins "
             rel="noopener"
           >
             Demo
