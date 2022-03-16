@@ -10,13 +10,14 @@ export default function Home() {
       <div className="min-h-screen object-cover">
         <div className="container absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
           <div className="overflow-hidden flex gap-4 justify-center items-center flex-col text-gray-100">
-            <p className="text-xl text-darkgray">Hello, i'm</p>
+            <p className="text-xl text-darkgray">Hello, i&apos;m</p>
             <div className="lg:w-2/3 w-full px-6 lg:px-0 ">
               <img
                 src="/Wisnu-Wicaksono.svg"
                 alt=""
                 className="myImage"
                 draggable="false"
+                layout="fill"
               />
             </div>
             <div>
@@ -27,24 +28,24 @@ export default function Home() {
             <div className="flex justify-center gap-4 text-white opacity-70 social-media">
               <SocialMedia
                 href="https://www.facebook.com/wiscaksono"
-                img="facebook.svg"
+                Image="facebook.svg"
               />
 
               <SocialMedia
                 href="https://www.instagram.com/amachoker"
-                img="instagram.svg"
+                Image="instagram.svg"
               />
               <SocialMedia
                 href="https://www.github.com/wiscaksono"
-                img="github.svg"
+                Image="github.svg"
               />
               <SocialMedia
                 href="https://www.linkedin.com/wiscaksono"
-                img="linkedin.svg"
+                Image="linkedin.svg"
               />
               <SocialMedia
                 href="https://www.twitter.com/wiscaksono"
-                img="twitter.svg"
+                Image="twitter.svg"
               />
             </div>
           </div>

@@ -18,7 +18,7 @@ export default function Cards({ src, name, author, href }) {
           <a
             href={href}
             className="text-orangebg font-semibold poppins"
-            target="_blank"
+            rel="noopener"
           >
             Demo
           </a>
