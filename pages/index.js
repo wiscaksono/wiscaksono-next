@@ -46,7 +46,7 @@ export default function Home() {
   return (
     <>
       <IndexPage />
-      <section className="bg-main bg-fixed">
+      <section className="bg-main bg-cover bg-fixed">
         <div className="absolute  left-1/2 transform -translate-x-1/2 navbar">
           <Navbar></Navbar>
         </div>

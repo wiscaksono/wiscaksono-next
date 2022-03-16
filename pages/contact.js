@@ -25,7 +25,7 @@ export default function contact() {
   return (
     <>
       <IndexPage />
-      <section className="bg-main no-scrollbar bg-fixed">
+      <section className="bg-main bg-fixed bg-cover">
         <div className="bg-background bg-fixed min-h-screen object-cover">
           <Navbar></Navbar>
           <div className="mt-10 container atasan">
