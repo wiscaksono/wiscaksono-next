@@ -28,24 +28,24 @@ export default function Home() {
             <div className="flex justify-center gap-4 text-white opacity-70 social-media">
               <SocialMedia
                 href="https://www.facebook.com/wiscaksono"
-                Image="facebook.svg"
+                img="facebook.svg"
               />
 
               <SocialMedia
                 href="https://www.instagram.com/amachoker"
-                Image="instagram.svg"
+                img="instagram.svg"
               />
               <SocialMedia
                 href="https://www.github.com/wiscaksono"
-                Image="github.svg"
+                img="github.svg"
               />
               <SocialMedia
                 href="https://www.linkedin.com/wiscaksono"
-                Image="linkedin.svg"
+                img="linkedin.svg"
               />
               <SocialMedia
                 href="https://www.twitter.com/wiscaksono"
-                Image="twitter.svg"
+                img="twitter.svg"
               />
             </div>
           </div>
