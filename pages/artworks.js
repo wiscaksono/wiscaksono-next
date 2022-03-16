@@ -2,7 +2,7 @@ import IndexPage from "../components/Head";
 import Cards from "../components/Cards";
 import Navbar from "../components/Navbar";
 import Scroller from "../components/scroller";
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import gsap from "gsap";
 import { TextPlugin } from "gsap/dist/TextPlugin";
 
