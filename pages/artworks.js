@@ -34,7 +34,6 @@ export default function artworks() {
               <img
                 draggable="false"
                 src="artwork.svg"
-                alt=""
                 className="my-10 lg:w-1/2 w-80 hover:-translate-y-2 transition-transform"
               />
               <p className="px-6  text-center lg:px-0 text-darkgray poppins">
@@ -59,7 +58,6 @@ export default function artworks() {
                 alt=""
                 className="lg:w-1/2 w-72 my-10 myImage"
               />
-
               <div className="grid gap-6 px-6 pb-10 mt-8 lg:grid-cols-3 lg:px-0 md:grid-cols-2">
                 <Cards
                   src="aplus.png"
