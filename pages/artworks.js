@@ -35,6 +35,7 @@ export default function artworks() {
                 draggable="false"
                 src="artwork.svg"
                 className="my-10 lg:w-1/2 w-80 hover:-translate-y-2 transition-transform"
+                alt=""
               />
               <p className="px-6  text-center lg:px-0 text-darkgray poppins">
                 I like to learn about things related to
