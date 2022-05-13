@@ -1,9 +1,14 @@
 import React from "react";
 
-export default function Cards({ src, name, author, href }) {
+export default function Cards({ src, name, author, href, type }) {
   return (
     <>
-      <div className="overflow-hidden rounded hover:shadow-2xl hover:scale-105 hover:rounded-xl transition-all duration-[400ms] ">
+      <div className="overflow-hidden relative rounded hover:shadow-2xl hover:scale-105 hover:rounded-xl transition-all duration-[400ms] ">
+        <div>
+          <p className="absolute top-0 left-0 px-3 py-1 bg-orangebg rounded-br-2xl poppins text-xs text-white font-medium">
+            {type}
+          </p>
+        </div>
         <div className=" aspect-square">
           <img
             src={src}

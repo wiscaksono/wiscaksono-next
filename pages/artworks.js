@@ -6,6 +6,57 @@ import gsap from "gsap";
 import { TextPlugin } from "gsap/dist/TextPlugin";
 
 export default function artworks() {
+  const porto = [
+    {
+      id: 1,
+      title: "Travel Awal",
+      image: "/artworks/travel-awal.webp",
+      link: "https://travelawal.com/",
+      author: "Me & Nakeusa",
+      type: "Web Development",
+    },
+    {
+      id: 2,
+      title: "Arve Personal Website",
+      image: "/artworks/bilal-arve.webp",
+      link: "https://arve.vercel.app/",
+      author: "Me & Nakeusa",
+      type: "Web Development",
+    },
+    {
+      id: 3,
+      title: "A+ Studio",
+      image: "/artworks/aplus.webp",
+      link: "https://aplus-studio.netlify.app/",
+      author: "Me",
+      type: "Web Development",
+    },
+    {
+      id: 4,
+      title: "NFT Market",
+      image: "/artworks/nft-market.webp",
+      link: "https://nft-wisnu.netlify.app/",
+      author: "Me",
+      type: "Web Development",
+    },
+    {
+      id: 5,
+      title: "Sosiotech",
+      image: "/artworks/sosiotech.webp",
+      link: "https://sisotech.netlify.app/",
+      author: "Me",
+      type: "Web Development",
+    },
+    {
+      id: 6,
+      title: "Finsweet",
+      image: "/artworks/sosiotech.webp",
+      link: "https://finsweet-nu.vercel.app/",
+      author: "Me",
+      type: "Web Development",
+    },
+  ];
+
   useEffect(() => {
     window.addEventListener(
       "contextmenu",
@@ -60,27 +111,16 @@ export default function artworks() {
                 className="lg:w-1/2 w-72 my-10 myImage"
               />
               <div className="grid gap-6 px-6 pb-10 mt-8 lg:grid-cols-3 lg:px-0 md:grid-cols-2">
-                <Cards
-                  src="aplus.png"
-                  name="A+ Studio"
-                  author="By: Me"
-                  href="https://aplus-studio.netlify.app/"
-                />
-                <Cards
-                  src="sosiotech.png"
-                  name="Sisotech"
-                  author="By: Me"
-                  href="https://sisotech.netlify.app/"
-                />
-                <Cards
-                  src="nft-market.png"
-                  name="NFT Marketplace"
-                  author="By: Me"
-                  href="https://nft-wisnu.netlify.app/"
-                />
-                <Cards src="moonlight.webp" name="A+ Studio" author="By: Me" />
-                <Cards src="majalah1.webp" name="A+ Studio" author="By: Me" />
-                <Cards src="thedeer.webp" name="A+ Studio" author="By: Me" />
+                {porto.map(({ id, title, image, author, link, type }) => (
+                  <Cards
+                    key={id}
+                    src={image}
+                    name={title}
+                    author={`By: ${author}`}
+                    href={link}
+                    type={type}
+                  />
+                ))}
               </div>
               <div className="hover:-translate-y-2 transition-transform items-center pt-5 pb-10 active:translate-y-[0.12.5rem]">
                 <button className="shadow bg-contactbg focus:outline-none focus:ring-2 focus:ring-orangebg transition-all font-bold py-2 px-4 rounded btn-kirim text-darkgray poppins">
