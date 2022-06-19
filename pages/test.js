@@ -1,42 +1,16 @@
-import Link from "next/link";
-import Scroller from "../components/scroller";
-import Lorem from "../components/lorem";
-import { useEffect, useRef } from "react";
-import gsap from "gsap";
-import ScrollTrigger from "gsap/dist/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
+import React from "react";
 
-const Box = () => {
-  const $box = useRef();
-
-  useEffect(() => {
-    gsap.to($box.current, {
-      opacity: 0,
-      scrollTrigger: {
-        trigger: $box.current,
-        start: "top top",
-        end: "bottom top",
-        pin: true,
-        pinType: "transform",
-        scrub: true,
-        pinSpacing: false,
-      },
-    });
-  }, []);
-
-  return <div className="box" ref={$box} />;
-};
-
-export default function test() {
+export default function DaftarBtn() {
+  const [showModal, setShowModal] = React.useState(false);
   return (
-    <Scroller>
-      <h1>Home</h1>
-      <Link href="/about">
-        <a>About</a>
-      </Link>
-      <hr />
-      <Box />
-      <Lorem />
-    </Scroller>
+    <>
+      <button
+        className="text-[17px] font-medium text-white py-[12px] px-[64px] rounded-[5px] bg-[#6200EE] daftar-btn hidden lg:block"
+        type="button"
+        onClick={() => setShowModal(true)}
+      >
+        Daftar
+      </button>
+    </>
   );
 }
